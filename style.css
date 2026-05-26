@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #c8f7c5, #a8d5ff);
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #1b5e20, #1565c0);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.hero {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.hero h2 {
+  color: #1b5e20;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.campo {
+  border-top: 8px solid #2e7d32;
+}
+
+.cidade {
+  border-top: 8px solid #1976d2;
+}
+
+.uniao {
+  border-top: 8px solid #f9a825;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.campo h3 {
+  color: #2e7d32;
+}
+
+.cidade h3 {
+  color: #1976d2;
+}
+
+.uniao h3 {
+  color: #f9a825;
+}
+
+.card p {
+  color: #444;
+}
+
+.highlight {
+  background: linear-gradient(to right, #1b5e20, #1565c0);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.highlight h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d1b2a;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2,
+  .highlight h2 {
+    font-size: 1.6rem;
+  }
+}
